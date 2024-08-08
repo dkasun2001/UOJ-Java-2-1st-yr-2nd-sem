@@ -1,3 +1,4 @@
+
 public class Time {
     private int second = 0;
     private int minute = 0;
@@ -52,7 +53,19 @@ public class Time {
     }
     
     public Time nextSecond() {
-        return ();
+         second++;
+    if (second >= 60) {
+        second = 0;
+        minute++;
+        if (minute >= 60) {
+            minute = 0;
+            hour = (hour + 1) % 24; 
+            /* if(hour>=24){
+                hour = 0;
+            } */
+        }
+    }
+    return this;
         
     }
 }
