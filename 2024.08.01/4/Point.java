@@ -39,6 +39,8 @@ public double distance(int x,int y){
      double distance =  Math.sqrt(xDiffrance * xDiffrance + yDiffrance * yDiffrance);
 
     return Math.round(distance * 1000) / 1000.0;
+     
+    
 }
 
 public double distance(){
