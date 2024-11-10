@@ -1,0 +1,6 @@
+abstract public class Payment{
+	public Payment(){
+		
+	}
+	abstract void processPayment(double payment);
+}
